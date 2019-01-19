@@ -21,10 +21,10 @@ app.use((req, res, next) => {//Middleware that will log some info
     next();
 });
 
-//If there is maintnance
-app.use((req, res, next) => {
-    res.render('maintnance.hbs');
-});
+// //If there is maintnance
+// app.use((req, res, next) => {
+//     res.render('maintnance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
